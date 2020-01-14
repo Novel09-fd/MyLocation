@@ -39,7 +39,18 @@
             android:id="@+id/isi_lat1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  " />
+
+        <TextView
+            android:id="@+id/isi_long1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="TextView" />
     </LinearLayout>
 
