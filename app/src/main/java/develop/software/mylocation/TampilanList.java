@@ -37,7 +37,8 @@ public class TampilanList extends AppCompatActivity {
 
     RecyclerView rv;
     TextView isiCoba, isiCoba2, isiCoba3, isiCoba4
-            ,isiCoba5,isiCoba6,isi_lat1,isi_long1;
+            ,isiCoba5,isiCoba6,isi_lat1,isi_long1
+            ,isi_lat2,isi_long2;
     int arr;
     int x;
     @Override
@@ -54,8 +55,10 @@ public class TampilanList extends AppCompatActivity {
         isiCoba6 = findViewById(R.id.isiCoba6);
 
         isi_lat1 = findViewById(R.id.isi_lat1);
+        isi_lat2 = findViewById(R.id.isi_lat2);
 
         isi_long1 = findViewById(R.id.isi_long1);
+        isi_long2 = findViewById(R.id.isi_long2);
 
 
         callGetLocationn();
@@ -140,10 +143,16 @@ public class TampilanList extends AppCompatActivity {
                         isiCoba2.setText(data.getData().getGpsTracking().get(x).getTime());
                         isi_lat1.setText(data.getData().getGpsTracking().get(x).getLatitude());
                         isi_long1.setText(data.getData().getGpsTracking().get(x).getLongitude());
-                        isiCoba3.setText(data.getData().getGpsTracking().get(3).getUsername());
-                        isiCoba4.setText(data.getData().getGpsTracking().get(3).getTime());
-                        isiCoba5.setText(data.getData().getGpsTracking().get(1).getUsername());
-                        isiCoba6.setText(data.getData().getGpsTracking().get(1).getTime());
+
+
+                        isiCoba3.setText(data.getData().getGpsTracking().get(1).getUsername());
+                        isiCoba4.setText(data.getData().getGpsTracking().get(1).getTime());
+                        isi_lat2.setText(data.getData().getGpsTracking().get(1).getLatitude());
+                        isi_long2.setText(data.getData().getGpsTracking().get(1).getLongitude());
+
+
+//                        isiCoba5.setText(data.getData().getGpsTracking().get(2).getUsername());
+//                        isiCoba6.setText(data.getData().getGpsTracking().get(2).getTime());
 
 
 
